@@ -1,0 +1,27 @@
+﻿@model EmployeeManagementWithMVC.Models.Employee
+
+@{
+    ViewData["Title"] = "Update";
+}
+
+<a asp-action="Index">View All Employees</a>
+<h2>Update</h2>
+<form method="post">
+    <p>
+        <label asp-for="EmployeeId">Your EmployeeId:</label>
+        <input asp-for="EmployeeId" />
+    </p>
+    <p>
+        <label asp-for="FirstName">Your First Name:</label>
+        <input asp-for="FirstName" />
+    </p>
+    <p>
+        <label asp-for="LastName">Your Last Name:</label>
+        <input asp-for="LastName" />
+    </p>
+    <p>
+        <label asp-for="Designation">Your Designation:</label>
+        <input asp-for="Designation" />
+    </p>
+    <p><button type="submit">Submit</button></p>
+</form>
